@@ -5,8 +5,12 @@
 </head>
 <body>
 	<h1>Joe's Blog</h1>
-
-	
-
+	<hr>
+	<h3>All Post</h3>
+	{% for post in posts %}
+		<h5> {{ post.title }} </h5>
+		<p> {{ post.text }} </p>
+		{{ post.date }}
+	{% endfor %}
 </body>
 </html>
